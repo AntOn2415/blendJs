@@ -122,3 +122,33 @@
 //      console.log("Goodbye!");
 //     break;
 // }
+
+//6. Дано рядок, що складається із символів, наприклад, 'a1abcde'.
+// Перевір, що першим символом цього рядка є літера 'a'.
+// Якщо так - виведи 'yes' у консоль, в противному випадку виведи 'no'.
+
+// const string = 'a1abcde';
+
+// //1 var
+// // const array = string.split("");
+// // if (array[0] === "a") {
+// //     console.log("yes");
+// // } else {
+// //     console.log("no");
+// // }
+
+// //2 var
+// // if (string[0] === "a") {
+// //     console.log("yes");
+// // } else {
+// //     console.log("no");
+// // }
+
+// //3 var
+// const firstLetter = string.startsWith("a") ? "yes": "no";
+// console.log(firstLetter);
+
+
+
+
+
