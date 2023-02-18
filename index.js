@@ -31,3 +31,22 @@
 // let minutes = String(input % 60).padStart(2, "0");
 // const time = `${hour}:${minutes}`;
 // console.log(time);
+
+
+//3. Напишіть цикл, який виведе в консоль усі парні числа від max до min включно по зменшенню
+
+// const min = 3;
+// const max = 8;
+
+// for (let index = max; index >= min; index -= 1) {
+//     if (index % 2 === 0) {
+//         console.log(index);
+//     } 
+// }
+
+// for (let index = max; index >= min; index -= 1) {
+//     if (!(index % 2)) {
+//         console.log(index);
+//     }
+    
+// }
