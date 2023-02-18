@@ -48,7 +48,7 @@
 //     if (!(index % 2)) {
 //         console.log(index);
 //     }
-    
+
 // }
 
 
@@ -56,14 +56,69 @@
 
 // const min = 1;
 // const max = 4;
-// let result = 1; 
+// let result = 1;
 // for (let index = min; index <= max; index += 1) {
 
 //     if (index % 2 === 0) {
 //         result *= index;
 //     //    console.log(index)
 //     }
-    
+
 // }
 // console.log(result);
 
+
+
+
+//5. Напишіть код, який буде запитувати логін за допомогою prompt "Hello, please enter your login!"
+// і виводити результат у консоль браузера
+//Якщо під час вводу login нажали клавішу Esc, то вивести у консоль рядок "Authorization has been cancelled"
+//Якщо користувач вводить "admin", то prompt запитує пароль (Please enter your password)
+//Якщо користувач вводить щось відмінне від "admin", то вивести рядок "Goodbye!"
+//Пароль перевіряти так:
+ //Якщо нажали клавішу Esc, то вивести у консоль рядок "Authorization has been cancelled"
+//Якщо користувач вводить "adminPassword", то вивести у консоль рядок "Hello!"
+//Якщо користувач вводить щось відмінне від "adminPassword", то вивести рядок "Goodbye!"
+
+
+// const corrLogin = "admin";
+// const corrPassword = "adminPassword";
+
+// const firstQuestion = prompt("Hello, please enter your login!");
+
+// if(firstQuestion === corrLogin) {
+//   let corrAnswer = prompt("Please enter your password");
+//   if(corrAnswer === corrPassword){
+//     console.log("Hello!");
+//   } else if(corrAnswer === null){
+//     console.log("Authorization has been cancelled");
+//   } else {
+//     console.log("Goodbye!");
+//   }
+// } else if (firstQuestion === null) {
+//   console.log("Authorization has been cancelled");
+// } else {
+//  console.log("Goodbye!");
+// }
+
+// switch (firstQuestion) {
+//   case corrLogin:
+//     let corrAnswer = prompt("Please enter your password");
+//     switch (corrAnswer) {
+//       case corrPassword:
+//         console.log("Hello!");
+//         break;
+//       case null:
+//         console.log("Authorization has been cancelled!");
+//         break;
+//       default: console.log("Goodbye!");
+//         break;
+//     }
+//     break;
+//   case null:
+//     console.log("Authorization has been cancelled");
+//     break;
+//   default:
+//      console.log("Goodbye!");
+//     break;
+// }
