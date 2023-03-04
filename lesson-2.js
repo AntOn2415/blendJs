@@ -77,25 +77,42 @@
 //mult() перевіряє чи присутні  властивості prop1/prop2 та повертає їх добуток, в противному випадку повертає null
 // Не забудьте, що математичні оператори працюють коректно тільки з числовими значеннями
 
-const calculator = {
-  read(a, b) {
-    if (a && b) {
-      this.prop1 = Number(a);
-      this.prop2 = Number(b);
-    }
-  },
-  sum() {
-    if (!this.prop1 && !this.prop2) {
-      return null;
-    }
-    return this.prop1 + this.prop2;
-  },
-  mult() {
-    if (!this.prop1 && !this.prop2) {
-      return null;
-    }
-    return this.prop1 * this.prop2;
-  },
-};
-calculator.read(3);
-console.log(calculator.mult());
+// const calculator = {
+//   read(a, b) {
+//     if (a && b) {
+//       this.prop1 = Number(a);
+//       this.prop2 = Number(b);
+//     }
+//   },
+//   sum() {
+//     if (!this.prop1 && !this.prop2) {
+//       return null;
+//     }
+//     return this.prop1 + this.prop2;
+//   },
+//   mult() {
+//     if (!this.prop1 && !this.prop2) {
+//       return null;
+//     }
+//     return this.prop1 * this.prop2;
+//   },
+// };
+// calculator.read(3);
+// console.log(calculator.mult());
+
+//6. Напишіть функцію updateObject, яка приймає об'єкт та перелік ключів
+//і повертає новий об'єкт без вказаних властивостей
+//Очікуваний результат ({ a: 1, b: 2, c: 3 }, 'b', 'c') => {a: 1}
+
+// function updateObject(obj, ...removedKeys) {
+//   const newObj = { ...obj };
+//   console.log(newObj);
+//   for (const key in newObj) {
+//     if (removedKeys.includes(key)) {
+//       delete newObj[key];
+//     }
+//   }
+//   return newObj;
+// }
+
+// console.log(updateObject({ a: 1, b: 2, c: 3 }, "b", "c"));
