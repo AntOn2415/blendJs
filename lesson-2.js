@@ -32,23 +32,46 @@
 // Напишіть функцію getTotalSalary, яка буде повертати загальну суму зарплат.
 // Якщо об'єкт пустий, то функція має повернути 0
 
-const salaries = {
-  mango: 1000,
-  poly: 1600,
-  ajax: 1470,
-};
+// const salaries = {
+//   mango: 1000,
+//   poly: 1600,
+//   ajax: 1470,
+// };
 
 
 
-function getTotalSalary(salaries) {
+// function getTotalSalary(salaries) {
 
-    let total = 0;
-    const everySalary = Object.values(salaries);
+//     let total = 0;
+//     const everySalary = Object.values(salaries);
     
-    for (const salary of everySalary) {
-        total += salary;
-    }
-    return total
-}
+//     for (const salary of everySalary) {
+//         total += salary;
+//     }
+//     return total
+// }
 
-console.log(getTotalSalary(salaries)) 
+// console.log(getTotalSalary(salaries)) 
+
+
+//3. Напишіть фукцію calcTotalPrice(stones, stonesName),
+//яка приймає масив об'єктів і рядок з назвою каменю.
+//Функція обчислює і повертає загальну вартість каменів з таким іменем
+
+const stones = [
+  { name: "emerald", price: 1300, quantity: 4 },
+  { name: "diamond", price: 2700, quantity: 6 },
+  { name: "sapphire", price: 400, quantity: 7 },
+  { name: "rubble", price: 150, quantity: 100 },
+];
+
+const calcTotalPrice = (stones, stonesName) => {
+ const totalPrice = stones.reduce((total, {name, price, quantity}) => {
+  if (name === stonesName) {
+    return total + price * quantity;
+  }
+return total;
+  },0);
+return totalPrice;
+}
+console.log(calcTotalPrice(stones, "sapphire"));
