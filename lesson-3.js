@@ -180,3 +180,12 @@ const users = [
 //   return status;
 // }
 // getInactiveUsers(users);
+
+// Напишіть функцію getUserWithEmail(users, email), яка отримує масив користувачів і емейл та повертає обєкт користувача з таким емейлом (властивість email)
+
+// function getUserWithEmail(users, email) {
+//   const user = users.find(({ email: userEmail }) => email === userEmail);
+
+//   return user;
+// }
+// console.log(getUserWithEmail(users, "shereeanthony@kog.com"));

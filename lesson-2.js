@@ -133,3 +133,5 @@
 // const changeObject = obj =>  Object.entries(obj);
 
 // console.log(changeObject({ a: 1, b: 2, c: 3 }));
+
+// Напишіть функцію getUserWithEmail(users, email), яка отримує масив користувачів і емейл та повертає обєкт користувача з таким емейлом (властивість email)
