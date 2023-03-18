@@ -159,7 +159,19 @@ const users = [
   },
 ];
 
-// Отримати масив імен усіх користувачів (поле name).
+// // Отримати масив імен усіх користувачів (поле name).
 
-const userNames = users.map(({ name }) => name);
-console.log(userNames);
+// const userNames = users.map(({ name }) => name);
+// console.log(userNames);
+
+
+
+
+// Напишіть функцію getUsersByColor(users, color), яка отримує масив користувачів і колір очей та повертає масив користувачів з таким кольором (властивість eyeColor)
+
+// function getUsersByColor(users, color) {
+//   const array = users.filter(({eyeColor}) => eyeColor === color);
+//   console.log(array);
+//   return array
+// }
+// getUsersByColor(users, 'blue')
