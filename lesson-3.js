@@ -36,3 +36,22 @@
 // const showProduct = (product) => console.log(product);
 
 // makeProduct("Banana", 10, showProduct);
+
+// task-3
+//  Напишіть функцію each(array, callback), яка
+//першим параметром приймає масив, а другим - функцію,
+//яка застосується до кожного елемента масива.
+//Функція each має повернути новий масив, елементами
+//якого будуть результати виклику callback.
+//callback функція має множити елементи на 2
+
+// function each(array, callback) {
+//     let newArray = array.map(callback);
+//     return newArray;
+// }
+
+// function double(a) {
+// return a * 2;
+// }
+
+// console.log(each([1, 2, 5, 7, 8], double));
