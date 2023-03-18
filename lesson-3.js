@@ -55,3 +55,19 @@
 // }
 
 // console.log(each([1, 2, 5, 7, 8], double));
+
+// Напишіть функцію makeCounter, яка повертає іншу
+//функцію, яка лічить і виводе в консоль кількість своїх викликів
+
+// function makeCounter() {
+//   let total = 0;
+//   return function () {
+//     total += 1;
+//     console.log(total);
+//   };
+// }
+// const counter = makeCounter();
+// counter();
+// counter();
+// counter();
+// counter();
