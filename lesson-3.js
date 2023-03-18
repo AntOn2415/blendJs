@@ -189,3 +189,24 @@ const users = [
 //   return user;
 // }
 // console.log(getUserWithEmail(users, "shereeanthony@kog.com"));
+
+// Напишіть функцію getUsersWithAge(users, minAge, maxAge), 
+// яка отримує масив користувачів, мінімальний вік та максимальний. 
+// Функція має повертати масив користувачів з віком у вказаному діапазоні (властивість age)
+//
+
+// function getUsersWithAge(users, minAge, maxAge) {
+// //     // const array = users.filter(({age}) => age >= minAge && age <= maxAge);
+// //     // return array; 
+
+// //     const array1 = users.reduce((acc, user) => {
+// //         if (user.age >= minAge && user.age <= maxAge) {
+// //             acc.push(user);  
+// //         }
+// //         return acc;
+// //     }, []);
+// // return array1;
+// }
+
+// console.log(getUsersWithAge(users, 20, 30));
+// console.log(getUsersWithAge(users, 31, 40));
