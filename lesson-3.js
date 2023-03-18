@@ -196,16 +196,16 @@ const users = [
 //
 
 // function getUsersWithAge(users, minAge, maxAge) {
-//     // const array = users.filter(({age}) => age >= minAge && age <= maxAge);
-//     // return array; 
+// //     // const array = users.filter(({age}) => age >= minAge && age <= maxAge);
+// //     // return array; 
 
-//     const array1 = users.reduce((acc, user) => {
-//         if (user.age >= minAge && user.age <= maxAge) {
-//             acc.push(user);  
-//         }
-//         return acc;
-//     }, []);
-// return array1;
+// //     const array1 = users.reduce((acc, user) => {
+// //         if (user.age >= minAge && user.age <= maxAge) {
+// //             acc.push(user);  
+// //         }
+// //         return acc;
+// //     }, []);
+// // return array1;
 // }
 
 // console.log(getUsersWithAge(users, 20, 30));
