@@ -164,9 +164,6 @@ const users = [
 // const userNames = users.map(({ name }) => name);
 // console.log(userNames);
 
-
-
-
 // Напишіть функцію getUsersByColor(users, color), яка отримує масив користувачів і колір очей та повертає масив користувачів з таким кольором (властивість eyeColor)
 
 // function getUsersByColor(users, color) {
@@ -175,3 +172,11 @@ const users = [
 //   return array
 // }
 // getUsersByColor(users, 'blue')
+// Напишіть функцію getInactiveUsers(users), яка отримує масив користувачів та повертає масив неактивних користувачів (властивість isActive)
+
+// function getInactiveUsers(users) {
+//   const status = users.filter(({ isActive }) => !isActive);
+//   console.log(status);
+//   return status;
+// }
+// getInactiveUsers(users);
